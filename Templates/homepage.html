@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="add">
+        {% include "_form.html" %}
+        <button id="add_btn">Add new cupcake</button>
+    </form>
+    <form id="edit">
+        {% include "_form.html" %}
+        <button id="edit_btn">Edit cupcake</button>
+    </form>
+    <form id="search">
+        <input type="text" id="search-box" placeholder="Search for cupcake flavors...">
+    </form>
+    <ul id="cupcakes">
+
+    </ul>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"
+    integrity="sha256-T/f7Sju1ZfNNfBh7skWn0idlCBcI3RwdLSS4/I7NQKQ=" crossorigin="anonymous"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script> 
+    <script src="static/cupcakes.js"></script>
+</body>
+</html>
